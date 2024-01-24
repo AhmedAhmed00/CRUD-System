@@ -1,0 +1,75 @@
+@import "global.css";
+
+.page-container {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.page-container form .title {
+  color: var(--main-color);
+}
+.page-container form .title::before {
+  content: "";
+  left: 0;
+  bottom: -10px;
+  height: 3px;
+  width: 60%;
+  position: absolute;
+  background-color: var(--main-color);
+  border-radius: 3px;
+}
+
+.page-container form .input-field {
+  margin: 20px 0;
+  height: 50px;
+  position: relative;
+}
+
+.input-field input {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  padding: 0 35px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid var(--secondary-color);
+  transition: all 0.3s;
+}
+.input-field i {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--main-color);
+  font-size: 23px;
+}
+
+.input-field i.show-hide-pass {
+  right: 0;
+  cursor: pointer;
+}
+
+.input-field input:is(:focus) {
+  border-bottom-color: var(--main-color);
+}
+.input-field input:is(:focus) ~ i {
+  color: var(--main-color);
+}
+form .form-btn {
+  border: none;
+  border-radius: 6px;
+  font-weight: 500;
+  background-color: var(--main-color);
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+form .form-btn:hover {
+  background-color: var(--secondary-color);
+  color: white;
+}
+
+

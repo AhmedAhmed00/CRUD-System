@@ -1,23 +1,26 @@
-h1 {
-  color: #09c;
+@import "../css/global.css";
+
+.head {
+  background-color: white;
+  border-radius: 10px;
 }
 
 .search-icon-container {
   width: 50px;
 }
+h1 {
+  color: var(--main-color);
+  font-size: 60px;
+}
 
 .icon i {
-  color: #09c;
+  color: var(--main-color);
   font-size: 32px;
   margin-bottom: 5px;
 }
 
-table {
-  border: 1px solid black;
-}
-
 table th {
-  background-color: #777 !important;
+  background-color: var(--main-color) !important;
   margin: 5px !important;
   color: white;
 }

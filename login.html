@@ -7,56 +7,51 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="/css/global.css" />
-    <link rel="stylesheet" href="css/form.css" />
-    <link rel="stylesheet" href="css/all.min.css" />
     <link
       rel="stylesheet"
       href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
     />
+    <link rel="stylesheet" href="css/form.css" />
   </head>
+
   <body>
     <div class="page-container w-50 position-absolute p-3 bg-white">
       <form action="" class="p-3">
-        <h2 class="title position-relative">Registration</h2>
-
+        <h2 class="title position-relative">Smart login system</h2>
         <div class="input-field">
-          <input placeholder="First Name" class="fname" type="email" />
-          <i class="uil uil-user"></i>
-        </div>
-
-        <div class="input-field">
-          <input placeholder="Last Name" class="sname" type="text" />
-          <i class="uil uil-user"></i>
-        </div>
-
-        <div class="input-field">
-          <input placeholder="Enter your email" class="email" type="email" />
+          <input
+            placeholder="Enter your email"
+            class="emailLogin"
+            type="email"
+          />
           <i class="uil uil-envelope icon"></i>
         </div>
 
         <div class="input-field">
           <input
             placeholder="Enter your password"
-            class="passLogin password pass"
+            class="passLogin password"
             type="password"
           />
           <i class="uil uil-lock icon"></i>
           <i class="uil uil-eye-slash show-hide-pass"></i>
         </div>
         <div class="error-msg-container">
-          <p class="handle-error-signup text-danger"></p>
+          <p class="handle-login-err text-danger"></p>
         </div>
+
         <div class="input-field">
-          <input class="form-btn" type="button" value="Sign Up" />
+          <input class="form-btn" type="button" value="Login" />
         </div>
+
         <div class="input-field">
-          <div class="login-signup text-center">
-            <p>Are you member? <a href="login.html">Login now</a></p>
+          <div class="login-signup">
+            <p>Not a member? <a href="index.html">Signup now</a></p>
           </div>
         </div>
       </form>
     </div>
 
-    <script src="js/signup.js"></script>
+    <script src="js/login.js"></script>
   </body>
 </html>
